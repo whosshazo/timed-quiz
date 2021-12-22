@@ -28,9 +28,23 @@ function displayQuestions() {
         var choicesElement = document.createElement("button")
         choicesElement.setAttribute("class", "choice")
         choicesElement.setAttribute("value", choices )
+        choicesElement.textContent = i + 1 + ". " + choices;
+        choicesElement.onclick = evaluateQuestion
+        choiceElement.appendChild(choicesElement)
     });
-}
+};
 
+function evaluateQuestion(){
+    if (this.value != questions[currentQuestions].answer) {
+        time -= 15
+
+        if (time < 0) {
+            time = 0
+        }
+    }
+};
+
+startBtn.onclick = start
 
 // WHEN START BUTTON AT CENTER OF PAGE IS CLICKED, I AM PRESENTED WITH THE FIRST QUESTION AND A TIMER WILL START IN THE TOP RIGHT CORNER
 button = "start";
