@@ -1,14 +1,14 @@
 var questions = [
     {
         title: "Inside which HTML element do we put the JavaScript?",
-        choice: ["A. <scripting>", "B. <javascript>", "C. <js>", "D. <script>"],
-        answer: "D. <script>"
+        choice: [" <scripting>", " <javascript>", " <js>", " <script>"],
+        answer: " <script>"
     },
 
     {
         title: "How can you add a comment in a JavaScript?",
-        choice: ["A. //This is a comment", "B. 'This is a comment'", "C. <!--This is a comment--!>", "D. <This is a comment>"],
-        answer: "A. //THis is a comment" 
+        choice: [" //This is a comment", " 'This is a comment'", " <!--This is a comment--!>", " <This is a comment>"],
+        answer: " //THis is a comment" 
     },
 
     {

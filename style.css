@@ -9,3 +9,7 @@ body {
     margin: 15%;
     display: flex;
 }
+
+.hide {
+    display: none;
+}

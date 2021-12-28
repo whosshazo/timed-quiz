@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +9,29 @@
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
+
+
 <body>
   <div class="timer">
-    time <span id="time"></span>
+    time <span id="time">0</span>
   </div>
   <div class="wrapper">
     <div class="start" id="start-screen">
-      <h1>Start Quiz</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita labore repellendus veritatis temporibus perferendis at cum beatae laboriosam dolor placeat, porro earum debitis repudiandae accusantium blanditiis consequatur deserunt aliquam fuga!</p>
+      <h1>Welcome to the JavaScript Quiz</h1>
+      <p>Test your knowledge of the world renound language of JavaScript. Do you have what it takes to beat the timer and make it to the end?<br> Lets find out!</p>
 
       <button id="start">Start</button>
 
     </div>
-    <div class="hide" id="questions">
+    <div id="questions">
       <h2 id="questions-title"></h2>
       <div class="choice" id="choice"></div>
     </div>
   </div>
   
+  <script src="./JS/questions.js"></script>
+  <script src="./JS/script.js"></script>
 </body>
+
+
 </html>
