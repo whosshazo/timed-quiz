@@ -6,7 +6,7 @@ body {
 
 .wrapper {
   text-align: center;
-  /* margin: 15%; */
+  margin: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
