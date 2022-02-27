@@ -1,15 +1,27 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(111, 211, 186);
-    font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(111, 211, 186);
+  font-size: 24px;
 }
 
 .wrapper {
-    text-align: center;
-    margin: 15%;
-    display: flex;
+  text-align: center;
+  /* margin: 15%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hide {
-    display: none;
+  display: none;
+}
+
+.timer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.score {
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ryan DeShazo | Timed JS Quiz</title>
+  </head>
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
-</head>
-
-
-<body>
-  <div class="timer">
-    time <span id="time">0</span>
-  </div>
-  <div class="wrapper">
-    <div class="start" id="start-screen">
-      <h1>Welcome to the JavaScript Quiz</h1>
-      <p>Test your knowledge of the world renound language of JavaScript. Do you have what it takes to beat the timer and make it to the end?<br> Lets find out!</p>
-
-      <button id="start">Start</button>
-
+  <body>
+    <div class="time-score">
+      <div class="timer">Time: <span id="time">0</span></div>
     </div>
-    <div id="questions">
-      <h2 id="questions-title"></h2>
-      <div class="choice" id="choice"></div>
+    <div class="wrapper">
+      <div class="start" id="start-screen">
+        <h1>Welcome to the JavaScript Quiz</h1>
+        <p>
+          Test your knowledge of the world renound language of JavaScript. Do
+          you have what it takes to beat the timer and make it to the end?<br />
+          Lets find out!
+        </p>
+
+        <button id="start">Start</button>
+      </div>
+      <div id="questions">
+        <h2 id="questions-title"></h2>
+        <div class="choice" id="choice"></div>
+      </div>
+      <div class="results hide">
+        <h1 class="final">All Done!</h1>
+        <h2 class="final-score">Your final score: <span id="score"></span></h2>
+        <div class="highscores">
+          <h3>Enter your intials to be added to list of scores!</h3>
+          <input type="text" class="initials" />
+          <button class="submit-btn">Submit</button>
+        </div>
+      </div>
+      <div class="score-list hide">
+        <h1 class="highScoreList">HighScores:</h1>
+        <ul class="playerScores"></ul>
+        <button class="play">Play Again</button>
+      </div>
     </div>
-  </div>
-  
-  <script src="./JS/questions.js"></script>
-  <script src="./JS/script.js"></script>
-</body>
 
-
+    <script src="./JS/questions.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
